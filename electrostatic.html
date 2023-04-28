@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+
+<body>
+    <h1>electrostatic force</h1>
+    <label for="q-src">Enter Value of Source Charge </label>
+    <input id="q-src" type="text" placeholder="0">
+    <label for="q-s-loc">Enter Co-ordinate of Source Charge </label>
+    <input id="q-s-loc" type="text" placeholder="0,0,0">
+    <input id="fix" type="button" value="Fix" onclick="fix()">
+    <label for="q-pt">Enter Value of Charge </label>
+    <input id="q-pt" type="text" placeholder="0">
+    <label for="q-loc">Enter Co-ordinate of Charge </label>
+    <input id="q-loc" type="text" placeholder="0,0,0">
+    <input id="q-add" type="button" value="Add charge" onclick="q_add()">
+    <div id="answer"></div>
+    <input id="f-calc" type="button" value="calculate" onclick="calculate()">
+    <script src="electrostatic.js"></script>
+</body>
+
+</html>
